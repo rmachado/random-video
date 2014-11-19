@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<title>Random Video Player</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+	<link href="//vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/4.10/video.js"></script>
+</head>
+<body>
+	<h1>Temporada {{season}} - Episodio {{episode}}</h1>
+
+	<div>
+		<video id="video" class="video-js vjs-default-skin"
+		  controls preload="auto" width="640" height="264"
+		  poster="/videos/poster.jpg" data-setup='{"example_option":true}'>
+		 <source src="{{url}}" type='video/{{type}}' />
+		 <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+		</video>
+	</div>
+</body>
+
+</html>

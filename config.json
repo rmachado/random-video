@@ -1,0 +1,5 @@
+{
+  "videos_path": "videos",
+  "video_format": "{episode}",
+  "video_type": "mp4"
+}
